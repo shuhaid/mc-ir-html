@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Money Control | Manage Group</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Bootstrap 4.3.1 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="wrapper manageGroupPage">
+    <header class="header">
+    <div id="mobile" class="device toggleBtn" onclick="myFunction()">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      </div>
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="assets/images/logo.png" alt="money control"></span>
+    </a> 
+    
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="hidden-xs">Gautam - Test Merchant </span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="assets/images/user-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Gautam- Test Merchant
+                  <small>Member since Nov. 2018</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <p>This is Photoshop's version  of Lorem Ipsum.</p>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-user-o"></i></a>  
+          </li> 
+          
+          <li>
+            <a href="#"><img src="assets/images/book.png" alt="money control"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+<aside class="side-navbar" id="sidebar">
+    <!-- sidebar -->
+    <section class="sidebar">
+       
+        
+    <div class="desk toggleBtn" onclick="myFunction()">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      </div>
+       <div class="clear"></div>
+        
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu">
+        
+        <li class="">
+          <a href="#">
+            <i class="fa fa-home"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        
+        <li class="" >
+          <a href="#contact" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-pie-chart"></i>
+            <span>Contacts</span>
+          </a>
+          <ul id="contact" class="collapse">
+            <li><a href="#">Contacts1</a></li>
+            <li><a href="#">Contacts2</a></li>
+            <li><a href="#">Contacts3</a></li>
+            <li><a href="#">Contacts4</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#payment" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-rocket"></i>
+            <span>Collect Payments</span>
+          </a>
+          <ul id="payment" class="collapse">
+            <li><a href="#">Collect Payments1</a></li>
+            <li><a href="#">Collect Payments2</a></li>
+            <li><a href="#">Collect Payments3</a></li>
+            <li><a href="#">Collect Payments4</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#requests" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-envelope"></i> <span>Reports</span>
+            <span>Requests</span>
+          </a>
+          <ul id="requests" class="collapse">
+            <li><a href="#">Requests1</a></li>
+            <li><a href="#">Requests2</a></li>
+            <li><a href="#">Requests3</a></li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="#transactions" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-money"></i> <span>Transactions</span>
+          </a>
+          <ul id="transactions" class="collapse">
+            <li><a href="#">Transactions1</a></li>
+            <li class="active"><a href="#">Transactions2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#gst" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-inr"></i> <span>GST</span>
+          </a>
+            <ul id="gst" class="collapse">
+            <li><a href="#">GST1</a></li>
+            <li><a href="#">GST2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#reports" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-bar-chart"></i> <span>Reports</span>
+          </a>
+            <ul id="reports" class="collapse">
+            <li><a href="#">Reports1</a></li>
+            <li><a href="#">Reports2</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#configuration" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-gears"></i> <span>Data Configuration</span>
+          </a>
+          <ul id="configuration" class="collapse">
+            <li><a href="#">Data Configuration1</a></li>
+            <li><a href="#">Data Configuration2</a></li>
+            <li><a href="#">Data Configuration3</a></li>
+            <li><a href="#">Data Configuration4</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+      
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="page" id="main">
+        <!-- Sidebar user panel -->
+      <!-- Left side column. contains the logo and sidebar -->
+      
+      
+
+    <!-- Main content -->
+    <section class="content">
+      
+          <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>Manage Group</h1>
+    <h4>Add customer to Group</h4>
+    </section>
+        <div class="col-md-12">
+            <div class="row">
+            <div class="col-md-8">
+            
+            <div class="col-md-12 selectGroupWp">
+            <div class="row">
+            <div class="col-md-6">
+               <div class="form-group">
+                <label>Choose Group</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" placeholder="Select Group">
+                  <option>Group1</option>
+                  <option>Group2</option>
+                  <option>Group3</option>
+                  <option>Group4</option>
+                  <option>Group5</option>
+                  <option>Group6</option>
+                </select>
+                <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+              </div>
+                </div>
+             <div class="col-md-6 addBtnGrp"> 
+                 <button type="button" class="btn btn-default"><i class="fa fa-plus"></i>Add New</button>
+                 <button type="button" class="btn btn-default">Add Group</button>
+            </div>
+            </div>
+            </div>
+            <!-- /.box-header -->
+                <h4>Customer List</h4>
+            <div class="box-body table-responsive">
+              <table id="example2" class="table table-hover">
+                <thead>
+                <tr>
+                  <th><div class="checkbox">
+                  <label>
+                    <input type="checkbox">All
+                  </label>
+                </div></th>
+                  <th>Customer Code</th>
+                  <th>Customer Name</th>
+                  <th>Email</th>
+                  <th>Mobile</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><div class="checkbox">
+                  <label>
+                    <input type="checkbox"> 
+                  </label>
+                </div></td>
+                  <td>1001</td>
+                  <td>Mahendra Nodi</td>
+                  <td>mahendra.nodi@hotmail.com</td>
+                  <td>9863744546</td>
+                </tr>
+                <tr>
+                   <td><div class="checkbox">
+                  <label>
+                    <input type="checkbox"> 
+                  </label>
+                </div></td>
+                  <td>1002</td>
+                  <td>Mahendra Nodi</td>
+                  <td>mahendra.nodi@hotmail.com</td>
+                  <td>9863744546</td>
+                </tr>
+                <tr>
+                   <td><div class="checkbox">
+                  <label>
+                    <input type="checkbox"> 
+                  </label>
+                </div></td>
+                  <td>1003</td>
+                  <td>Mahendra Nodi</td>
+                  <td>mahendra.nodi@hotmail.com</td>
+                  <td>9863744546</td>
+                </tr>
+                <tr>
+                   <td><div class="checkbox">
+                  <label>
+                    <input type="checkbox">
+                  </label>
+                </div></td>
+                  <td>1004</td>
+                  <td>Mahendra Nodi</td>
+                  <td>mahendra.nodi@hotmail.com</td>
+                  <td>9863744546</td>
+                </tr>
+                
+                </tbody>
+                
+              </table>
+            </div>
+            <!-- /.box-body -->
+            </div>
+            
+            <div class="col-md-4 srchCritWpr">
+                <h5>Search Criteria</h5>
+                <form>
+                    <div class="form-group">
+                    <label>Show Custom Column (Max 5)</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" placeholder="Select Group">
+                      <option>Column Name</option>
+                      <option>Customer Code</option>
+                      <option>Customer Name</option>
+                      <option>Email</option>
+                      <option>Mobile</option>
+                    </select>
+                    <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+                  </div>
+                    <div class="form-group">
+                    <label>Filter by</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" placeholder="Select Group">
+                      <option>Filter by</option>
+                      <option>Customer Code</option>
+                      <option>Customer Name</option>
+                      <option>Email</option>
+                      <option>Mobile</option>
+                    </select>
+                    <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+                  </div>
+                    <div class="form-group">
+                    <label>Filter Condition</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" placeholder="Select Group">
+                      <option>Filter Condition</option>
+                      <option>Customer Code</option>
+                      <option>Customer Name</option>
+                      <option>Email</option>
+                      <option>Mobile</option>
+                    </select>
+                    <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+                  </div>
+                    <div class="form-group">
+                    <label>Filter Value</label>
+                    <input class="form-control" type=" input"/>
+                  </div>
+                    <div class="form-group">
+                    <label>Choose Group</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" placeholder="Select Group">
+                      <option>Choose Group</option>
+                      <option>Customer Code</option>
+                      <option>Customer Name</option>
+                      <option>Email</option>
+                      <option>Mobile</option>
+                    </select>
+                    <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+                  </div>
+                    <button type="button" class="btn btn-default">Submit</button>
+                    <a href="#" class="reset">Reset</a>
+                    
+                </form>
+            </div>
+            </div>
+        </div>
+        <!-- /.col -->
+      
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer text-center">
+    
+    <strong>Copyright &copy; e-Eighteen.com Ltd. All rights reserved.
+  </footer>
+
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3.4.1 -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap 4.3.1 -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<!--
+<script>
+function myFunction() {
+  var x = document.getElementById("sidebar");
+  var y = document.getElementsByClassName("page");
+//    alert(x.style.width);
+  if (x.style.width == "100px") {
+    x.style.width = "250px";
+//    y.style.width = "calc(100% - 250px);";
+       $(".page").css('width','calc(100% - 250px)');
+  } else {
+    x.style.width = "100px";    
+      
+      $(".page").css('width','calc(100% - 120px)');
+  }
+}
+ 
+</script>
+-->
+<script>
+function myFunction() {
+  var x = document.getElementById("sidebar");
+  if (x.class === "side-navbar") {
+//    x.style.display = "block";
+  } else {
+    x.class = "miniSidebar";
+  }
+}
+$(document).ready(function(){
+  $(".toggleBtn").click(function(){
+        if($("#sidebar").hasClass('miniSidebar')){
+            $("#sidebar").removeClass('miniSidebar');
+            $("#main").removeClass('fullPage');
+//            $("#main").class('side-navbar');
+        }else{
+            $("#sidebar").addClass('miniSidebar');
+        $("#main").addClass('fullPage');
+        }
+        
+  });
+});
+</script>
+    
+
+
+
+</body>
+</html>

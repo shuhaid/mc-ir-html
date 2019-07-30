@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Money Control | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Bootstrap 4.3.1 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', '% Returns'],
+          ['Jun 18',  1000,      400],
+          ['Jul 18',  1170,      460],
+          ['Aug 18',  660,       1120],
+          ['Sep 18',  1030,      540],
+          ['Oct 18',  1030,      540],
+          ['Nov 18',  1030,      540]
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Paid',      7],
+          ['Unpaid',    2],
+          ['Pending',   1]
+        ]);
+
+        var options = {
+          title: '',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+    
+    
+</head>
+<body class="dasboardPage">
+<div class="wrapper manageGroupPage">
+    <header class="header">
+    <div id="mobile" class="device toggleBtn" onclick="myFunction()">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      </div>
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="assets/images/logo.png" alt="money control"></span>
+    </a> 
+    <div class="desk logoWpr">
+        <ul>
+        <li>
+            <img src="assets/images/cibil_logo.png" alt="cibil">
+        </li> 
+        <li>
+            <img src="assets/images/dell-logo.png" alt="dell">
+        </li>
+        <li>
+            <div class="box"><p>128x36</p></div>
+        </li>
+        <li>
+            <div class="box"><p>128x36</p></div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+    </div>
+    
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="hidden-xs">Gautam - Test Merchant </span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="assets/images/user-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Gautam- Test Merchant
+                  <small>Member since Nov. 2018</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <p>This is Photoshop's version  of Lorem Ipsum.</p>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-user-o"></i></a>  
+          </li> 
+          
+          <li>
+            <a href="#"><img src="assets/images/book.png" alt="money control"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <div class="clear"></div>   
+    <div class="advtWpr">
+        <img src="assets/images/cibil_logo_big.png" alt="cibil"> 
+        <h4>Give your business better access to Capital.</h4>
+        <h3>Get your CIBIL Rank now</h3>
+    </div>
+  </header>
+  
+  
+<aside class="side-navbar" id="sidebar">
+    <!-- sidebar -->
+    <section class="sidebar">
+       
+        
+    <div class="desk toggleBtn" onclick="myFunction()">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+        
+      </div>
+        <div class="clear"></div>
+        
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu">
+        
+        <li class="">
+          <a href="#">
+            <i class="fa fa-home"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        
+        <li class="" >
+          <a href="#contact" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-pie-chart"></i>
+            <span>Contacts</span>
+          </a>
+          <ul id="contact" class="collapse">
+            <li><a href="#">Contacts1</a></li>
+            <li><a href="#">Contacts2</a></li>
+            <li><a href="#">Contacts3</a></li>
+            <li><a href="#">Contacts4</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#payment" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-rocket"></i>
+            <span>Collect Payments</span>
+          </a>
+          <ul id="payment" class="collapse">
+            <li><a href="#">Collect Payments1</a></li>
+            <li><a href="#">Collect Payments2</a></li>
+            <li><a href="#">Collect Payments3</a></li>
+            <li><a href="#">Collect Payments4</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#requests" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-envelope"></i> <span>Reports</span>
+            <span>Requests</span>
+          </a>
+          <ul id="requests" class="collapse">
+            <li><a href="#">Requests1</a></li>
+            <li><a href="#">Requests2</a></li>
+            <li><a href="#">Requests3</a></li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="#transactions" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-money"></i> <span>Transactions</span>
+          </a>
+          <ul id="transactions" class="collapse">
+            <li><a href="#">Transactions1</a></li>
+            <li class="active"><a href="#">Transactions2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#gst" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-inr"></i> <span>GST</span>
+          </a>
+            <ul id="gst" class="collapse">
+            <li><a href="#">GST1</a></li>
+            <li><a href="#">GST2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#reports" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-bar-chart"></i> <span>Reports</span>
+          </a>
+            <ul id="reports" class="collapse">
+            <li><a href="#">Reports1</a></li>
+            <li><a href="#">Reports2</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#configuration" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-gears"></i> <span>Data Configuration</span>
+          </a>
+          <ul id="configuration" class="collapse">
+            <li><a href="#">Data Configuration1</a></li>
+            <li><a href="#">Data Configuration2</a></li>
+            <li><a href="#">Data Configuration3</a></li>
+            <li><a href="#">Data Configuration4</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+      
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="page" id="main">
+        <!-- Sidebar user panel -->
+      <!-- Left side column. contains the logo and sidebar -->
+      
+      
+
+    <!-- Main content -->
+    <section class="content">
+      
+          <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="device logoWpr">
+        <ul>
+        <li>
+            <img src="assets/images/cibil_logo.png" alt="cibil">
+        </li> 
+        <li>
+            <img src="assets/images/dell-logo.png" alt="dell">
+        </li>
+        <li>
+            <div class="box"><p>71x20</p></div>
+        </li>
+        <li>
+            <div class="box"><p>71x20</p></div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+    </div>
+        
+      <h1>Merchant Dashboard</h1>
+        <div class="countWpr">
+            <ul>
+                <li>
+                    <div class="countBox">
+                    <h3>2</h3>
+                    <p>Total Customers</p>
+                    </div>                   
+                    <div class="ftr">
+                        <a href="#">View More</a>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="countBox">
+                    <h3>2</h3>
+                    <p>Total Customers</p>
+                    </div>                   
+                    <div class="ftr">
+                        <a href="#">View More</a>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="countBox">
+                    <h3>2</h3>
+                    <p>Total Customers</p>
+                    </div>                   
+                    <div class="ftr">
+                        <a href="#">View More</a>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="countBox">
+                    <h3>2</h3>
+                    <p>Total Customers</p>
+                    </div>                   
+                    <div class="ftr">
+                        <a href="#">View More</a>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                    </div>
+                </li>
+                <div class="clear"></div>
+            </ul> 
+            </div>
+        
+        <div class="notifiWpr">
+            <h4>Notifications</h4>
+            <div class="alert alert-warning" role="alert">
+                <div class="row vertical-align">
+                  <div class="text-center">
+                    <i class="fa fa-exclamation-circle"></i> 
+                  </div>
+                  <div class="col-11">
+                    Account Status Alert
+                  </div>
+                </div>
+              
+            </div>
+            <div class="alert alert-info" role="alert">
+                <div class="row vertical-align">
+                  <div class="text-center">
+                    <i class="fa fa-info-circle"></i> 
+                  </div>
+                  <div class="col-11">
+                    <strong>Information:</strong> You can now login with your moneycontrol account
+                  </div>
+                </div>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <div class="row vertical-align">
+                  <div class="text-center">
+                    <img src="assets/images/cibil_logo.png" alt="cibil"> 
+                  </div>
+                  <div class="col-11">
+                    CIBIL Rank report at a special price of Rs.2000/-(Rs3000) only for moneycontrol users. Get yours <a href="#">now</a>.
+                  </div>
+                </div>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <div class="row vertical-align">
+                  <div class="text-center">
+                    <i class="fa fa-exclamation-circle"></i> 
+                  </div>
+                  <div class="col-11">
+                    Account Status Alert
+                  </div>
+                </div>
+              
+            </div>
+            <div class="alert alert-info" role="alert">
+                <div class="row vertical-align">
+                  <div class="text-center">
+                    <i class="fa fa-info-circle"></i> 
+                  </div>
+                  <div class="col-11">
+                    <strong>Information:</strong> You can now login with your moneycontrol account
+                  </div>
+                </div>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <div class="row vertical-align">
+                  <div class="text-center">
+                    <img src="assets/images/falco.jpg" alt="falco"> 
+                  </div>
+                  <div class="col-11">
+                    Native Advertising
+                  </div>
+                </div>
+            </div>  
+        </div>
+        <!--  notifiWpr end  -->
+        
+        <div class="chartWpr">
+            <div class="lineChart">
+                <div class="chartWprHead">
+                    <h4>Payment Received</h4>
+                    <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                </div>
+                <div id="curve_chart" style="width: 100%; height:400px"></div>
+            </div> <!--  lineChart end  -->
+            
+            <div class="pieChart">
+                <div class="chartWprHead">
+                    <h4>Billing Status</h4>
+                    <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                </div>
+                <div id="donutchart" style="width: 100%; height:400px;"></div>
+            </div> <!--  lineChart end  -->
+            <div class="clear"></div>
+        </div>
+        <!--  chartWpr end  -->
+        
+       <div class="countWprFtr">
+            <ul>
+                <li>
+                    <div class="countBox">
+                    <h3>2</h3>
+                    <p>Total Customers</p>
+                    </div>                   
+                    <div class="ftr">
+                        <a href="#">View More</a>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="countBox">
+                    <h3>2</h3>
+                    <p>Total Customers</p>
+                    </div>                   
+                    <div class="ftr">
+                        <a href="#">View More</a>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="countBox">
+                    <h3>2</h3>
+                    <p>Total Customers</p>
+                    </div>                   
+                    <div class="ftr">
+                        <a href="#">View More</a>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right"></i></a>
+                    </div>
+                </li>
+                <div class="clear"></div>
+            </ul> 
+            </div>
+    
+    </section>
+        
+      
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer text-center">
+    
+    <strong>Copyright &copy; e-Eighteen.com Ltd. All rights reserved.
+  </footer>
+
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3.4.1 -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap 4.3.1 -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<!--
+<script>
+function myFunction() {
+  var x = document.getElementById("sidebar");
+  var y = document.getElementsByClassName("page");
+//    alert(x.style.width);
+  if (x.style.width == "100px") {
+    x.style.width = "250px";
+//    y.style.width = "calc(100% - 250px);";
+       $(".page").css('width','calc(100% - 250px)');
+  } else {
+    x.style.width = "100px";    
+      
+      $(".page").css('width','calc(100% - 120px)');
+  }
+}
+ 
+</script>
+-->
+<script>
+function myFunction() {
+  var x = document.getElementById("sidebar");
+  if (x.class === "side-navbar") {
+//    x.style.display = "block";
+  } else {
+    x.class = "miniSidebar";
+  }
+}
+$(document).ready(function(){
+  $(".toggleBtn").click(function(){
+        if($("#sidebar").hasClass('miniSidebar')){
+            $("#sidebar").removeClass('miniSidebar');
+            $("#main").removeClass('fullPage');
+//            $("#main").class('side-navbar');
+        }else{
+            $("#sidebar").addClass('miniSidebar');
+        $("#main").addClass('fullPage');
+        }
+        
+  });
+});
+</script>
+    
+
+
+
+</body>
+</html>
