@@ -1,15 +1,25 @@
 .header{border-bottom:1px solid #dddddd; height:65px; position: fixed;z-index: 999; background:#fff; width: 100%;}
 .navbar{float: right; padding: 1.2rem 1rem!important;}
-.navbar .nav li{float: left; margin-left: 20px;}
+.navbar .nav li{float: left; margin-left:10px;}
 .navbar-nav{flex-direction: row!important;}
-.navbar-nav .dropdown-menu{position: absolute!important;}
+.nav.navbar-nav li a{ padding: 5px 10px;display: block; }
+.nav.navbar-nav li a.dropdown-toggle:hover{background:#2c5294;}
+.nav.navbar-nav li a.dropdown-toggle:hover i{color: #fff;}
+.navbar-nav .dropdown-menu{position: absolute!important; min-width: 11rem;}
+.navbar-static-top .dropdown-menu{right: 0;left: auto;}
+.navbar-static-top .dropdown-toggle{}
+.navbar-static-top .dropdown-toggle::after{display: none;}
 .logo{float: left;width: 250px;}
 .logo span{float:right; padding-top:12px;}
 .toggleBtn{height:40px;}
 .toggleBtn a{float: right; background:#d0e0ed; margin: 10px 10px 0 0;}
 li{list-style-type: none;}
-.navbar .nav .dropdown-menu li{margin-left:7px;}
-.navbar .nav .dropdown-menu .btn{margin: 3px;}
+.navbar-static-top .user-header{width:90%;}
+.navbar-static-top .user-header h3{font-size: 14px; color: #1765a5; text-align: center;}
+.navbar .nav .dropdown-menu li{margin:0 7px;}
+.navbar .nav .dropdown-menu .user-body ul{margin-top:5px;}
+.navbar .nav .dropdown-menu .user-body ul a{font-size: 14px; color: #888888;}
+.navbar .nav .dropdown-menu .user-body ul a i{margin-right: 5px; width: 12px;}
 .btn-flat{border-radius:0px!important;}
 
 .side-navbar {
@@ -122,6 +132,7 @@ aside::-webkit-scrollbar-thumb{background: #888; }
 aside::-webkit-scrollbar-thumb:hover{background: #555;}
 
 .sidebar ul{padding:15px 0;}
+.sidebar-menu{overflow-y: scroll; height:270px;}
 .sidebar-menu i{color:#a1c1db;}
 .content{padding: 20px;}
 .manageGroupPage h1{color:#1765a5; text-transform: uppercase;}
@@ -205,10 +216,190 @@ ul{margin: 0; padding: 0;}
 .desk{display: inline-block;}
 .device{display: none;}
 
+/*merchant Resistration page css start*/
+.mRegisterPage .header {height:auto;}
+.mRegisterPage .logo{width: 180px;}
+.mRegisterPage aside{display: none;}
+.mRegisterPage h1{font-size:24px; font-weight:bold; color: #1765a5; text-transform:uppercase; text-align:center; margin-bottom:15px; margin-top: 30px;}
+.formPage{padding-top:351px;}
+.mRegiterform{padding-bottom:20px;}
+.mRegiterform .comp p{font-size:12px;color:#495057; text-align:right; display:block;}
+.mRegiterform .leftInput.form-group{margin-right:2%;width:49%; float:left;}
+.mRegiterform .rtInput.form-group{width:49%; float:left;}
+.mRegiterform .toggle_radio{
+  position: relative;
+  margin-bottom:10px;
+  overflow: hidden;
+  padding: 0 !important;
+  position: relative;
+}
+.mRegiterform .toggle_radio > * {
+  float: left;
+}
+.mRegiterform .toggle_radio input[type=radio]{
+  display: none;
+  /*position: fixed;*/
+}
+.mRegiterform .toggle_radio label{
+  font-size:12px; font-weight:bold; text-align:center;
+  color:#1765a5;
+  z-index: 0;
+  display: block;padding: 8px;
+  width:160px;
+  margin-right:6px;
+  border:1px solid #1765a5;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  cursor: pointer;
+  z-index: 1;
+  /*background: rgba(0,0,0,.1);*/
+  text-align: center;
+  /*margin: 0 2px;*/
+  /*background: blue;*/ /*make it blue*/
+}
+.mRegiterform .toggle_radio label p{margin-bottom:0;}
+.mRegiterform .toggle_option_slider{
+  /*display: none;*/
+  /*background: red;*/
+  height:36px;
+  width:160px;
+  position: absolute;
+  -webkit-border-radius:3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.mRegiterform #first_toggle:checked ~ .toggle_option_slider{
+  border:3px solid #1765a5; 
+}
+.mRegiterform #second_toggle:checked ~ .toggle_option_slider{
+  border:3px solid #1765a5;
+  left: 165px;
+}
+.mRegiterform .btn{background:#1765a5; color:#fff!important; width:25%; display:block; margin:20px auto;}
+.mRegisterPage .main-footer{background:#d6e2e7; padding:5px;}
+
+.congWpr{text-align: center; margin-bottom:20px;}
+.congWpr h2{color:#616161; font-size: 20px; font-weight: bold;}
+.congWpr h3{color:#0d0d0d; font-size: 20px;}
+.congWpr .btn{background:#1765a5; color:#fff!important; width:25%; display:block; margin:20px auto;}
+.congWpr .toggle_radio{ margin-bottom:10px; display: inline-block;
+  overflow: hidden;
+  padding: 0 !important;
+  position: relative;
+}
+.congWpr .toggle_radio > * {float:left;}
+.congWpr .toggle_radio input[type=radio]{display: none;}
+.congWpr .toggle_radio label{
+  font-size:12px; font-weight:bold; text-align:center;
+  color:#828282;
+  z-index: 0;
+  display: block;padding: 8px 0px;
+  width:120px;
+  margin-right:6px;
+  border:1px solid #d8d8d8;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  cursor: pointer;
+  z-index: 1; text-align: center;
+}
+.congWpr .toggle_radio label p{margin-bottom:0;}
+.congWpr .toggle_option_slider{height:36px; width:120px;  position:absolute; -webkit-border-radius:3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.congWpr #first_toggle:checked ~ .toggle_option_slider{border:1px solid #000; color: #000;}
+.congWpr #second_toggle:checked ~ .toggle_option_slider{border:1px solid #000;color: #000; left:125px;}
+.fileSize p{font-size:12px;color:#495057; display:block;}
+.gstWpr{background:#f8f8f8; padding: 18px;}
+
+/*upload file css start*/
+.mRegiterform label{color: #828282;}
+.upload-box .btn-file {background-color: #f5f5f5; border:1px solid #c7c7c7;}
+.upload-box .hold {background: #fff;
+    float: left;
+    width: 100%;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding:5px;
+}
+.upload-box .hold a {line-height:30px;
+    color: #808080;
+    text-decoration: none;
+}
+
+.upload-box .btn-file {color: #808080; font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    float: right; padding: 6px 20px;;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.upload-box .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    opacity: 0;
+    outline: none;
+    background: #fd0707;
+    cursor: inherit;
+    display: block;
+}
+/*upload file css end*/
+.chequeWpr{padding-top: 18px;}
+.btnGroup{margin: 0 auto;}
+.btnGroup button, .btnGroup .btn{float:left;  }
+.border_btn{border:1px solid #d8d8d8; background: none; -webkit-border-radius:3px; -moz-border-radius: 3px; border-radius: 3px; padding:6px 15px;    font-weight: 400; margin: 20px 10px; display: block;}
+.mRegiterform .btnGroup{width: 42%;}
+.mRegiterform .btnGroup .btn{width:65%;}
+
+/*merchant Resistration page css end*/
+
+/* offers page css start*/
+.offerWpr h4{text-transform: uppercase;}
+.offerLinks ul{border-bottom: 1px solid #d1d1d1; padding-bottom: 14px; margin: 10px 0 30px 0;}
+.offerLinks li{display: inline-block;}
+.offerLinks li a{text-transform: uppercase; color:#6b6b6b; font-size: 14px; font-weight: bold; padding: 15px 10px;}
+.offerLinks li a.active, .offerLinks li a:hover{color:#30659f; border-bottom: 2px solid #30659f; text-decoration: none;}
+
+.offerListWpr li{width:22.9%; float:left; margin:1%; text-align: center;}
+.offerListWpr .countBox{border:1px solid #a1c1db; padding: 10px;}
+.offerListWpr .countBox .imgWpr{height:105px; padding: 20px 0;}
+.offerListWpr .countBox .imgWpr img{}
+.offerListWpr .countBox h3{font-size:20px; font-weight: bold; text-transform: uppercase;}
+.offerListWpr .countBox p{font-size:14px; line-height: 18px; font-weight: normal;}
+.offerListWpr .countBox a:hover{text-decoration: none;}
+.offerListWpr .blueBtn{background:#1765a5; padding: 5px 20px;border-radius: 3px; color: #fff; margin: 10px 0; display:inline-block;}
+
+/* offers page css end*/
+
+@media (max-width: 1152px) {
+.mRegiterform .btnGroup{width:52%;}
+}
+
 @media (max-width: 1024px) {
     .lineChart{width:100%; margin-right:0; margin-bottom: 30px;}
     .pieChart{width:100%;}
     .dasboardPage .logo{width:185px;}
+   
 }
 @media (max-width: 768px) {
     .manageGroupPage h1{font-size: 1.5rem;}    
@@ -218,8 +409,12 @@ ul{margin: 0; padding: 0;}
     .addBtnGrp{padding-top:10px; margin-bottom: 30px;}
     .srchCritWpr{margin-top:30px;}
     .advtWpr{display: none;}
-    .dasboardPage .side-navbar, .dasboardPage .page{top:144px;}
+    .dasboardPage .side-navbar, .dasboardPage .page{top:124px;}
     .countWpr li, .countWprFtr li{width:100%;margin-right:0; margin-bottom: 20px;}
+    .formPage{padding-top: 60px;}
+    .mRegiterform .btnGroup{width:62%;}
+    .offerListWpr li{width: 98%;    margin:2% 1%;}
+    .navbar{padding: 0 1rem .5rem !important;}
 }
 @media (max-width: 414px) {
     .miniSidebar{display: block;}   
@@ -232,15 +427,27 @@ ul{margin: 0; padding: 0;}
     .toggleBtn a{float: left; margin-left: 10px; margin-top: 17px;}
     .addBtnGrp .btn{margin-bottom: 10px;}
     .desk{display: none;}
-.device{display: inline-block;}
+    .device{display: inline-block;}
     .toggleBtn{float:left;}
     .device.logoWpr img{height: 20px;}
     .device.logoWpr .box{width:71px; height:20px;}
     .device.logoWpr .box p{line-height: 20px; font-size: 10px;}
     .device.logoWpr li{margin: 10px 12px;}
     .dasboardPage .side-navbar, .dasboardPage .page{top:63px;}
-    .navbar .nav li.dropdown{display: none;}
+    .navbar .navbar-custom-menu li:nth-child(1) span{display: none;}
+/*    .navbar .nav li.dropdown{display: none;}*/
     .dropdown-menu{left:0;    width: 300px;}
+    .navbar .nav .dropdown-menu li{width:95%;}
+    .mRegiterform .leftInput.form-group{width:100%; margin-right:0;}
+	.mRegiterform .rtInput.form-group{width:100%;}
+    .mRegiterform .btn{width:100%;}
+    .mRegisterPage aside{display:block;}
+    .mRegisterPage .header{height:55px;}
+    .congWpr .btn, .mRegiterform .btnGroup{width:100%;}
+    .mRegiterform .btnGroup .btn{margin: 0 0 20px 0;}
+    .mRegisterPage h1{margin-top:10px}
+    .border_btn{padding:19px 15px; margin:0px 15px;}
+    .mRegiterform .btnGroup .btn{width:57%;}
     
 }
 
@@ -248,4 +455,18 @@ ul{margin: 0; padding: 0;}
     .dasboardPage .logo{width: 160px;}
     .device.logoWpr li{margin: 10px 8px;}
     
+}
+
+@media (max-width: 375px) {
+.mRegiterform .toggle_radio label{width: 140px;}
+.mRegiterform .toggle_option_slider{width: 140px;}
+.mRegiterform #second_toggle:checked ~ .toggle_option_slider{left: 145px;}
+.mRegiterform .btnGroup .btn{width:52%;}
+}
+@media (max-width: 320px) {
+.mRegiterform .toggle_radio label{width: 120px;}
+.mRegiterform .toggle_option_slider{width: 120px;}
+.mRegiterform #second_toggle:checked ~ .toggle_option_slider{left: 125px;}
+.border_btn {width: 40%;padding: 19px 15px;}
+.mRegiterform .btnGroup .btn{width:46%;}
 }
