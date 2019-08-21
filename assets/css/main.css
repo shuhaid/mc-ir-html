@@ -670,3 +670,88 @@ h2.resp-accordion {
 .navbar{padding: 0 .5rem .5rem !important;}
 .navbar-static-top .dropdown-menu{right:-50px;}
 }
+
+.listnav {
+    padding: 0px 10px !important;
+}
+.nav.navbar-nav li .dropdown-toggle{
+    padding: 0px 10px !important;
+}
+.display-hide,.display-none{
+    display: none;
+}
+.flatNoWpr{
+    margin-top: 0px;
+}
+.removeWpr{
+    margin-top: 0px;
+}
+
+.green.btn {
+    color: #fff !important;
+    background-color: #26a69a;
+}
+.blue.btn {
+    color: #fff !important;
+    background-color: #2386ca;
+}
+.red.btn {
+    color: #fff !important;
+    background-color: #b83a3e;
+}
+.grey.btn {
+    color: #333 !important;
+    background-color: #d3d3d3;
+}
+
+.portlet.box.blue {
+    border: 1px solid #60aee4;
+    border-top: 0;
+}
+
+.portlet-title {
+    background-color: #4869a2;
+    border-bottom: 0;
+    padding: 0 10px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.caption {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.panel-default .panel-heading {
+    color: #333;
+    background-color: #f9f9f9;
+    border-color: #e0e0e0;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+.accordion .panel .panel-title .accordion-toggle {
+    display: block;
+    padding: 10px 15px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.sidebar li.active {
+    background: transparent;
+
+}
+
+.sidebar li.active a {
+    color:     #007bff;
+}
+
+.sidebar li.active a i {
+    color: #a1c1db;
+}
