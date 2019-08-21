@@ -1,4 +1,4 @@
-# mc-ir-html
+# GST tool HTML
 - Dashboard - [link](https://shuhaid.github.io/mc-ir-html/dashboard.html)
 - Manage Groups - [link](https://shuhaid.github.io/mc-ir-html/manageGroup.html)
 - Offers - [link](https://shuhaid.github.io/mc-ir-html/offers.html)
