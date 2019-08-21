@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Bootstrap 4.3.1 -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -20,7 +21,8 @@
     
 <div class="wrapper manageGroupPage">
     <header class="header">
-        <div class="advtWpr">
+        <div class="advtWpr alert alert-dismissible">
+         <button type="button" class="close" onclick="removeMargin()" data-dismiss="alert">&times;</button>
         <img src="assets/images/cibil_logo_big.png" alt="cibil"> 
         <h4>Give your business better access to Capital.</h4>
         <h3>Get your CIBIL Rank now</h3>
@@ -62,9 +64,9 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           
-          <li>
+          <li class="hidden-xs">
             <a href="#">
-              <span class="hidden-xs">Gautam - Test Merchant </span>
+              <span>Gautam - Test Merchant </span>
             </a>
           </li>
           <li class="dropdown user user-menu">
@@ -105,10 +107,10 @@
     
   </header>
   
-  
-<aside class="side-navbar" id="sidebar">
+ <div class="">
+<aside class="side-navbar largHdr" id="sidebar">
     <!-- sidebar -->
-    <section class="sidebar">
+    <section class="sidebar scroll">
        
         
     <div class="desk toggleBtn" onclick="myFunction()">
@@ -126,13 +128,13 @@
       <ul class="sidebar-menu">
         
         <li class="">
-          <a href="#">
+          <a href="#" title="Dashboard">
             <i class="fa fa-home"></i> <span>Dashboard</span>
           </a>
         </li>
         
         <li class="" >
-          <a href="#contact" aria-expanded="false" data-toggle="collapse" class="collapsed">
+          <a href="#contact" title="Contacts" aria-expanded="false" data-toggle="collapse" class="collapsed">
             <i class="fa fa-pie-chart"></i>
             <span>Contacts</span>
           </a>
@@ -144,7 +146,7 @@
           </ul>
         </li>
         <li class="">
-          <a href="#payment" aria-expanded="false" data-toggle="collapse" class="collapsed">
+          <a href="#payment" title="Collect Payments" aria-expanded="false" data-toggle="collapse" class="collapsed">
             <i class="fa fa-rocket"></i>
             <span>Collect Payments</span>
           </a>
@@ -156,7 +158,7 @@
           </ul>
         </li>
         <li class="">
-          <a href="#requests" aria-expanded="false" data-toggle="collapse" class="collapsed">
+          <a href="#requests" title="Requests" aria-expanded="false" data-toggle="collapse" class="collapsed">
             <i class="fa fa-envelope"></i> <span>Reports</span>
             <span>Requests</span>
           </a>
@@ -166,8 +168,8 @@
             <li><a href="#">Requests3</a></li>
           </ul>
         </li>
-        <li class="active">
-          <a href="#transactions" aria-expanded="false" data-toggle="collapse" class="collapsed">
+        <li>
+          <a href="#transactions" title="Transactions" aria-expanded="false" data-toggle="collapse" class="collapsed">
             <i class="fa fa-money"></i> <span>Transactions</span>
           </a>
           <ul id="transactions" class="collapse">
@@ -176,7 +178,7 @@
           </ul>
         </li>
         <li>
-          <a href="#gst" aria-expanded="false" data-toggle="collapse" class="collapsed">
+          <a href="#gst" title="GST" aria-expanded="false" data-toggle="collapse" class="collapsed">
             <i class="fa fa-inr"></i> <span>GST</span>
           </a>
             <ul id="gst" class="collapse">
@@ -185,7 +187,7 @@
           </ul>
         </li>
         <li>
-          <a href="#reports" aria-expanded="false" data-toggle="collapse" class="collapsed">
+          <a href="#reports" title="Reports" aria-expanded="false" data-toggle="collapse" class="collapsed">
             <i class="fa fa-bar-chart"></i> <span>Reports</span>
           </a>
             <ul id="reports" class="collapse">
@@ -194,7 +196,7 @@
           </ul>
         </li>
         <li class="">
-          <a href="#configuration" aria-expanded="false" data-toggle="collapse" class="collapsed">
+          <a href="#configuration" title="Data Configuration" aria-expanded="false" data-toggle="collapse" class="collapsed">
             <i class="fa fa-gears"></i> <span>Data Configuration</span>
           </a>
           <ul id="configuration" class="collapse">
@@ -204,9 +206,9 @@
             <li><a href="#">Data Configuration4</a></li>
           </ul>
         </li>
-        <li>
-          <a href="#offers" aria-expanded="false" data-toggle="collapse" class="collapsed">
-            <i class="fa fa-gift"></i> <span>Offers</span>
+        <li class="active">
+          <a href="#offers" title="Offers" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-gift"></i> <span>Offers<span class="new">New</span></span>
           </a>
             <ul id="reports" class="collapse">
             <li><a href="#">Reports1</a></li>
@@ -214,13 +216,19 @@
           </ul>
         </li>
       </ul>
+        
+        <div class="desk sideadvtWpr">
+            <div class="advtBox">
+                <p>180x150</p>
+            </div>
+        </div>
     </section>
     <!-- /.sidebar -->
   </aside>
       
   
   <!-- Content Wrapper. Contains page content -->
-  <div class="page" id="main">
+  <div class="page largHdr" id="main">
         <!-- Sidebar user panel -->
       <!-- Left side column. contains the logo and sidebar -->
       
@@ -250,25 +258,27 @@
     </div>
       <div class="offerWpr"> 
       <h4>Offers</h4>
-        
+        <div id="horizontalTab"> 
           <div class="offerLinks">
-            <ul>
-                <li><a href="#all" class="active">All</a></li> 
-                <li><a href="#officeNeeds">Office Needs</a></li>
-                <li><a href="#sales">Sales</a></li> 
-                <li><a href="#finance">Finance</a></li>
-                <li><a href="#productivity">Productivity</a></li> 
-                <li><a href="#travel">Travel</a></li>
-                <li><a href="#recreation">Recreation</a></li> 
-                <li><a href="#health">Health</a></li>
+            <ul class="resp-tabs-list">
+                <li><a href="#">All</a></li> 
+                <li><a href="#">Office Needs</a></li>
+                <li><a href="#">Sales</a></li> 
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Productivity</a></li> 
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Recreation</a></li> 
+                <li><a href="#">Health</a></li>
             </ul>
           </div>
-        <div id="all" class="offerListWpr">
+          <div class="resp-tabs-container">
+            <div>
+            <div class="offerListWpr">
             <ul>
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -278,7 +288,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -288,7 +298,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -298,7 +308,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -308,7 +318,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -318,7 +328,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -328,7 +338,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -338,7 +348,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -348,7 +358,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -358,7 +368,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -368,7 +378,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -378,7 +388,7 @@
                 <li>
                     <div class="countBox">
                         <div class="imgWpr">
-                            <img src="assets/images/dell-logo.png"/>
+                            <img src="assets/images/product2.png"/>
                         </div>
                     <h3>Dream Big. Save Big.</h3>
                     <p>Partener with our Small Business Technology Adviser who can help you save up to <strong><span>&#8377;</span> 20,000/-</strong> on technology accesories.</p>
@@ -388,8 +398,104 @@
                 <div class="clear"></div>
             </ul> 
         </div>
-         
-      </div>   
+            <!-- /.offerListWpr -->
+            </div><!-- /.tab 1 -->
+            
+            <div>
+                <p>Tab 2</p>
+<p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit. Vestibulum nibh urna,  Vestibulum nibh urna,it.</p>
+</div><!-- /.tab 2 -->
+              
+            <div>
+                <p>Tab 3</p>
+<p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit. Vestibulum nibh urna,  Vestibulum nibh urna,it.</p>
+</div><!-- /.tab 3 -->
+              
+              <div>
+                  <p>Tab 4</p>
+<p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit. Vestibulum nibh urna,  Vestibulum nibh urna,it.</p>
+</div><!-- /.tab 4 -->
+              
+            <div>
+            <div class="detailWpr">
+            <div class="productimgWpr">
+                <img src="assets/images/product1.jpg"/>    
+            </div> 
+            <div class="prodOfferWpr">
+                <h2>Product Offer</h2>
+                <img src="assets/images/product2.png"/>
+                <h3>15% Off</h3>
+                <p>On all purchase VXBlock Purchase for MC SMEs.</p>
+                <a href="#" class="blueBtn">Shop Now</a>
+            </div>
+            <div class="clear"></div>
+            <div class="descWpr">
+                <h3>Simplify IT with a turnkey engineered system experience.</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            
+            <div class="proDtlWpr">
+                <div class="productimgWpr">
+                    <img src="assets/images/product3.png"/>    
+                </div> 
+                <div class="prodInfo">
+                    <h4>Product Details:</h4>
+                    <p><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</strong></p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    
+                    <h4>Offer Details:</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    
+                    <div class="contBtn">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-phone"></i> Call Me</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-address-card-o"></i> Contact Sales</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-comments-o"></i> Chat</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div><!-- proDtlWpr end-->
+            <div class="trmWpr">
+                <p><i class="fa fa-check-circle"></i> I authorise Dell/ its authorised partners to call me.</p>
+                <a href="#">Terms & Conditions</a>
+                <div class="clear"></div>
+            </div>
+            
+        </div>
+            <!-- /.detailWpr -->
+            </div><!-- /.tab 5 -->
+              <div>
+                  <p>Tab 6</p>
+<p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit. Vestibulum nibh urna,  Vestibulum nibh urna,it.</p>
+</div><!-- /.tab 6 -->
+              
+            <div>
+                <p>Tab 7</p>
+<p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit. Vestibulum nibh urna,  Vestibulum nibh urna,it.</p>
+</div><!-- /.tab 7 -->
+              
+              <div>
+                  <p>Tab 8</p>
+<p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit. Vestibulum nibh urna,  Vestibulum nibh urna,it.</p>
+</div><!-- /.tab 8 -->
+          </div><!-- /.resp-tabs-container -->
+          </div><!-- /#horizontalTab -->
+      </div> <!-- /.offerWpr -->
+        
+        <div class="device sideadvtWpr">
+            <div class="advtBox">
+                <p>320x50</p>
+            </div>
+        </div>
         
     </section>
         
@@ -399,9 +505,10 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer text-center">
-    
-    <strong>Copyright &copy; e-Eighteen.com Ltd. All rights reserved.
+    <strong>Copyright &copy;</strong> e-Eighteen.com Ltd. All rights reserved.
   </footer>
+     
+</div> 
 
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
@@ -414,6 +521,26 @@
 <!-- Bootstrap 4.3.1 -->
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
+    
+<script src="assets/js/easy-responsive-tabs.js"></script>
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+//type: 'default', //Types: default, vertical, accordion           
+//width: 'auto', //auto or any width like 600px
+//fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+
+});
+</script>    
 <!--
 <script>
 function myFunction() {
@@ -434,6 +561,10 @@ function myFunction() {
 </script>
 -->
 <script>
+function removeMargin(){
+    $("#main").addClass("miniHdr"); //css("top","70px");
+    $(".side-navbar").addClass("miniHdr"); //.css("top","70px");
+}
 function myFunction() {
   var x = document.getElementById("sidebar");
   if (x.class === "side-navbar") {

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Money Control | Merchant Registration</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Bootstrap 4.3.1 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    
+    
+</head>
+<body>
+<div class="mRegisterPage">
+    <header class="header">
+	 <div class="advtWpr alert alert-dismissible">
+        <button type="button" class="close" onclick="removeMargin()" data-dismiss="alert">&times;</button>
+        <img src="assets/images/cibil_logo_big.png" alt="cibil"> 
+        <h4>Give your business better access to Capital.</h4>
+        <h3>Get your CIBIL Rank now</h3>
+    </div>
+	
+    <div id="mobile" class="device toggleBtn" onClick="myFunction()">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      </div>
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="assets/images/logo.png" alt="money control"></span>
+    </a> 
+    <div class="desk logoWpr">
+        <ul>
+        <li>
+            <img src="assets/images/cibil_logo.png" alt="cibil">
+        </li> 
+        <li>
+            <img src="assets/images/dell-logo.png" alt="dell">
+        </li>
+        <li>
+            <div class="box"><p>128x36</p></div>
+        </li>
+        <li>
+            <div class="box"><p>128x36</p></div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+    </div>
+    
+     <div class="clear"></div>   
+   
+  </header>
+  
+  <aside class="side-navbar" id="sidebar">
+    <!-- sidebar -->
+    <section class="sidebar">
+       
+        
+    <div class="desk toggleBtn" onclick="myFunction()">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+        
+      </div>
+        <div class="clear"></div>
+        
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu">
+        
+        <li class="">
+          <a href="#" title="Dashboard">
+            <i class="fa fa-home"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        
+        <li class="" >
+          <a href="#contact" title="Contacts" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-pie-chart"></i>
+            <span>Contacts</span>
+          </a>
+          <ul id="contact" class="collapse">
+            <li><a href="#">Contacts1</a></li>
+            <li><a href="#">Contacts2</a></li>
+            <li><a href="#">Contacts3</a></li>
+            <li><a href="#">Contacts4</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#payment" title="Collect Payments" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-rocket"></i>
+            <span>Collect Payments</span>
+          </a>
+          <ul id="payment" class="collapse">
+            <li><a href="#">Collect Payments1</a></li>
+            <li><a href="#">Collect Payments2</a></li>
+            <li><a href="#">Collect Payments3</a></li>
+            <li><a href="#">Collect Payments4</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#requests" title="Requests" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-envelope"></i> <span>Reports</span>
+            <span>Requests</span>
+          </a>
+          <ul id="requests" class="collapse">
+            <li><a href="#">Requests1</a></li>
+            <li><a href="#">Requests2</a></li>
+            <li><a href="#">Requests3</a></li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="#transactions" title="Transactions" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-money"></i> <span>Transactions</span>
+          </a>
+          <ul id="transactions" class="collapse">
+            <li><a href="#">Transactions1</a></li>
+            <li class="active"><a href="#">Transactions2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#gst" title="GST" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-inr"></i> <span>GST</span>
+          </a>
+            <ul id="gst" class="collapse">
+            <li><a href="#">GST1</a></li>
+            <li><a href="#">GST2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#reports" title="Reports" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-bar-chart"></i> <span>Reports</span>
+          </a>
+            <ul id="reports" class="collapse">
+            <li><a href="#">Reports1</a></li>
+            <li><a href="#">Reports2</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#configuration" title="Data Configuration" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-gears"></i> <span>Data Configuration</span>
+          </a>
+          <ul id="configuration" class="collapse">
+            <li><a href="#">Data Configuration1</a></li>
+            <li><a href="#">Data Configuration2</a></li>
+            <li><a href="#">Data Configuration3</a></li>
+            <li><a href="#">Data Configuration4</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+ 
+  <!-- Content Wrapper. Contains page content -->
+  <div class="formPage">
+     <section class="container">   
+    <!-- Main content -->
+   
+    <section class="content-header">
+        <div class="device logoWpr">
+        <ul>
+        <li>
+            <img src="assets/images/cibil_logo.png" alt="cibil">
+        </li> 
+        <li>
+            <img src="assets/images/dell-logo.png" alt="dell">
+        </li>
+        <li>
+            <div class="box"><p>71x20</p></div>
+        </li>
+        <li>
+            <div class="box"><p>71x20</p></div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+    </div>
+      <div class="congWpr">  
+        <h1>Merchant Registration</h1>
+        <h2>Congratulations!</h2>
+          <h3>Your Account is created Successfully.</h3>
+          <a href="#" class="btn">Go to Dashboard</a>
+          <p>Do you want to enable online payment collections for your organization?</p>
+          <div class="toggle_radio">
+              <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
+              <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
+              <label for="first_toggle"><p>Not Now</p></label>
+              <label for="second_toggle"><p>Yes</p></label>
+              <div class="toggle_option_slider"></div>
+          </div>
+      </div>
+	  
+        <form class="mRegiterform">
+            <div class="col-md-12">
+                <h5>Please provide your Bank details:</h5>
+            </div>
+			<div class="comp col-md-12">
+			     <p>*Mandatory Fields</p>
+			</div>
+			<div class="col-md-12">
+                <div class="leftInput form-group">
+      		        <input type="text" class="form-control" id="" placeholder="Bank Name*" name="">
+    		      </div>
+			     <div class="rtInput form-group">
+      		        <input type="text" class="form-control" id="" placeholder="Bank IFSC Code*" name="">
+    		      </div>
+			     <div class="clear"></div>
+			</div>
+			
+			<div class="col-md-12">
+            	<div class="leftInput form-group">
+      		        <input type="text" class="form-control" id="" placeholder="Bank Account No.*" name="">
+                </div>
+                <div class="rtInput form-group">
+                    <input type="text" class="form-control" id="" placeholder="Bank A/C Holder Name*" name="">
+                </div>
+			<div class="clear"></div>
+			</div>
+            
+            <div class="fileSize col-md-12">
+                <h5>To activate payments please upload your KYC documents:</h5>
+                <p>*Max file size 1 MB</p>
+            </div>
+            
+			<div class="col-md-12">
+                <div class="gstWpr leftInput form-group">
+                    <label>GST Certificate* </label>
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio1">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Yes
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio2">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">No
+                  </label>
+                </div>
+                    <div class="form-group">
+                      <div class="upload-box">
+                        <div class="hold"><a href="#">No file chosen</a> <span class="btn-file"> Upload File
+                        <input type="file">
+                        </span> </div>
+                        </div>
+                    </div>
+                </div>
+                
+			<div class="chequeWpr rtInput form-group">
+                <label>Cancelled Cheque / Account Statement*</label>
+      		    <div class="upload-box">
+                <div class="hold"><a href="#">No file chosen</a> <span class="btn-file"> Upload File
+                <input type="file">
+                </span> </div>
+                </div>
+            </div>
+			<div class="clear"></div>
+			</div>
+			<div class="col-md-12">
+				<div class="leftInput form-group">
+                    <label>Partner's Address Proof* (Aadhaar/DL/Passport)</label>
+                    <div class="upload-box">
+                    <div class="hold"><a href="#">No file chosen</a> <span class="btn-file"> Upload File
+                    <input type="file">
+                    </span> </div>
+                    </div>
+    			</div>
+                <div class="rtInput form-group">
+                    <label>Partner's PAN Card*</label>
+                    <div class="upload-box">
+                    <div class="hold"><a href="#">No file chosen</a> <span class="btn-file"> Upload File
+                    <input type="file">
+                    </span> </div>
+                    </div>
+                </div>
+				<div class="clear"></div>
+			</div>
+			<div class="col-md-12">
+				<div class="leftInput form-group">
+                    <label>Partnership Deed*</label>
+                    <div class="upload-box">
+                    <div class="hold"><a href="#">No file chosen</a> <span class="btn-file"> Upload File
+                    <input type="file">
+                    </span> </div>
+                    </div>
+    			</div>
+                <div class="rtInput form-group">
+                    <label>Business Registration proof* (Shop Act. IE certificate)</label>
+                    <div class="upload-box">
+                    <div class="hold"><a href="#">No file chosen</a> <span class="btn-file"> Upload File
+                    <input type="file">
+                    </span> </div>
+                    </div>
+                </div>
+				<div class="clear"></div>
+			</div>
+            
+			
+			<div class="btnGroup">
+                <button type="submit" class="border_btn">Submit Later</button>
+				<button type="submit" class="btn">Submit Documents for verification</button>
+                <div class="clear"></div>
+			</div>
+        </form>
+        
+        
+        <!--  mRegiterform end  -->
+        
+        
+       
+    
+    </section>
+    
+	</section>
+    <!-- /.container -->
+  </div><!-- /.formPage -->
+  <!-- /.content-wrapper -->
+  <footer class="main-footer text-center">
+    
+      <strong>Copyright &copy;</strong> e-Eighteen.com Ltd. All rights reserved.
+  </footer>
+
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3.4.1 -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap 4.3.1 -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+
+<script>
+function removeMargin(){
+    $(".formPage").css("padding-top","70px");
+}
+function myFunction() {
+  var x = document.getElementById("sidebar");
+  if (x.class === "side-navbar") {
+//    x.style.display = "block";
+  } else {
+    x.class = "miniSidebar";
+  }
+}
+$(document).ready(function(){
+  $(".toggleBtn").click(function(){
+        if($("#sidebar").hasClass('miniSidebar')){
+            $("#sidebar").removeClass('miniSidebar');
+            $("#main").removeClass('fullPage');
+//            $("#main").class('side-navbar');
+        }else{
+            $("#sidebar").addClass('miniSidebar');
+        $("#main").addClass('fullPage');
+        }
+        
+  });
+});
+</script>
+
+    
+
+
+</body>
+</html>

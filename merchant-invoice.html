@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Money Control | Merchant Invoice</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Bootstrap 4.3.1 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    
+   <!-- select by search css -->   
+    <link rel="stylesheet" href="assets/css/fstdropdown.css">
+    
+   <!-- on off toggle css -->  
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    
+   <style type="text/css">
+       
+        
+    </style> 
+    
+      
+</head>
+<body class="dasboardPage">
+    
+<div class="wrapper merInvoicePage">
+    <header class="header">
+        <div class="advtWpr alert alert-dismissible">
+		<button type="button" class="close" onclick="removeMargin()"  data-dismiss="alert">&times;</button>
+        <img src="assets/images/cibil_logo_big.png" alt="cibil"> 
+        <h4>Give your business better access to Capital.</h4>
+        <h3>Get your CIBIL Rank now</h3>
+    </div>
+    <div id="mobile" class="device toggleBtn" onClick="myFunction()">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      </div>
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="assets/images/logo.png" alt="money control"></span>
+    </a> 
+    <div class="desk logoWpr">
+        <ul>
+        <li>
+            <img src="assets/images/cibil_logo.png" alt="cibil">
+        </li> 
+        <li>
+            <img src="assets/images/dell-logo.png" alt="dell">
+        </li>
+        <li>
+            <div class="box" ><p>128x36</p></div>
+        </li>
+        <li>
+            <div class="box"><p>128x36</p></div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+    </div>
+    
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          
+          <li>
+            <a href="#">
+              <span class="hidden-xs">Gautam - Test Merchant </span>
+            </a>
+          </li>
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-o"></i></a> 
+            
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <h3>Profile Completion</h3>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                      70%
+                    </div>
+                  </div>
+                
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                  <ul>
+                      <li><a href="#"><i class="fa fa-user-o"></i>Update Profile</a></li>
+                      <li><a href="#"><i class="fa fa-building-o"></i>Company Profile</a></li>
+                      <li><a href="#"><i class="fa fa-lock"></i>Password Reset</a></li>
+                      <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+                  </ul>
+                <!-- ul -->
+              </li><!-- user-body -->
+              
+            </ul>
+          </li> 
+          
+          <li>
+            <a href="#"><img src="assets/images/book.png" alt="money control"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <div class="clear"></div>   
+    
+  </header>
+  
+ <div class="main"> 
+<aside class="side-navbar largHdr" id="sidebar">
+    <!-- sidebar -->
+    <section class="sidebar scroll">
+       
+        
+    <div class="desk toggleBtn" onClick="myFunction()">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+        
+      </div>
+        <div class="clear"></div>
+        
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu">
+        
+        <li class="">
+          <a href="#" title="Dashboard">
+            <i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+        
+        <li class="">
+          <a href="#contact" title="Contacts" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-pie-chart"></i>
+            <span>Contacts</span>          </a>
+          <ul id="contact" class="collapse">
+            <li><a href="#">Contacts1</a></li>
+            <li><a href="#">Contacts2</a></li>
+            <li><a href="#">Contacts3</a></li>
+            <li><a href="#">Contacts4</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#payment" title="Collect Payments" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-rocket"></i>
+            <span>Collect Payments</span>          </a>
+          <ul id="payment" class="collapse">
+            <li><a href="#">Collect Payments1</a></li>
+            <li><a href="#">Collect Payments2</a></li>
+            <li><a href="#">Collect Payments3</a></li>
+            <li><a href="#">Collect Payments4</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#requests" title="Requests" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-envelope"></i> <span>Reports</span>
+            <span>Requests</span>          </a>
+          <ul id="requests" class="collapse">
+            <li><a href="#">Requests1</a></li>
+            <li><a href="#">Requests2</a></li>
+            <li><a href="#">Requests3</a></li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="#transactions" title="Transactions" aria-expanded="true" data-toggle="collapse" class="collaps show">
+            <i class="fa fa-money"></i> <span>Transactions</span>          </a>
+          <ul id="transactions" class="collapse show">
+            <li class="active"><a href="#">Transactions1</a></li>
+            <li><a href="#">Transactions2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#gst" title="GST" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-inr"></i> <span>GST</span>          </a>
+            <ul id="gst" class="collapse">
+            <li><a href="#">GST1</a></li>
+            <li><a href="#">GST2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#reports" title="Reports" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-bar-chart"></i> <span>Reports</span>          </a>
+            <ul id="reports" class="collapse">
+            <li><a href="#">Reports1</a></li>
+            <li><a href="#">Reports2</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#configuration" title="Data Configuration" aria-expanded="false" data-toggle="collapse" class="collapsed">
+            <i class="fa fa-gears"></i> <span>Data Configuration</span>          </a>
+          <ul id="configuration" class="collapse">
+            <li><a href="#">Data Configuration1</a></li>
+            <li><a href="#">Data Configuration2</a></li>
+            <li><a href="#">Data Configuration3</a></li>
+            <li><a href="#">Data Configuration4</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+      
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="page largHdr" id="main">
+        <!-- Sidebar user panel -->
+      <!-- Left side column. contains the logo and sidebar -->
+      
+      
+
+    <!-- Main content -->
+    <section class="content">
+      
+          <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="device logoWpr">
+        <ul>
+        <li>
+            <img src="assets/images/cibil_logo.png" alt="cibil">
+        </li> 
+        <li>
+            <img src="assets/images/dell-logo.png" alt="dell">
+        </li>
+        <li>
+            <div class="box"><p>71x20</p></div>
+        </li>
+        <li>
+            <div class="box"><p>71x20</p></div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+    </div>
+      <div class="formWpr invoiceForm">
+        <form class="form-horizontal" action="">
+            
+          <div class="invoiceInfoWpr">
+            <div class="infoHead">
+            <h5>Invoice Information</h5>
+                <div class="clear"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row form-group">
+                        <label class="control-label col-sm-5" for="">Select Customer<span>*</span></label>
+                        <div class="col-sm-6">
+                   <select class='fstdropdown-select form-control' id="first">
+                        <option value="">Select Customer</option>
+                        <option value="1">First Customer</option>
+                        <option value="2">Second Customer</option>
+                        <option value="3">Third Customer</option>
+                    </select>
+                    </div>
+                        <div class="col-sm-1">
+                            <button type="submit" class="addBtn"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+ 
+                    
+                    <fieldset disabled>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Customer Code</label>
+                      <div class="col-sm-7">
+                          <input type="text" id="" class="form-control" placeholder="">
+                      </div>
+                        
+                    </div>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Customer Name</label>
+                      <div class="col-sm-7">          
+                        <input type="text" class="form-control" id="" placeholder="" name="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Email ID</label>
+                      <div class="col-sm-7">          
+                        <input type="email" class="form-control" id="" placeholder="" name="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Mobile No</label>
+                      <div class="col-sm-7">          
+                        <input type="text" class="form-control" id="" placeholder="" name="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="email">Address</label>
+                      <div class="col-sm-7">
+                        <textarea class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Flat No</label>
+                      <div class="col-sm-7">          
+                        <input type="text" class="form-control" id="" placeholder="" name="">
+                      </div>
+                    </div>
+                    </fieldset>
+                    
+                </div>
+                <div class="col-md-6">
+                    
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Billing Cycle name<span>*</span></label>
+                      <div class="col-sm-7">          
+                        <input type="text" class="form-control" id="" placeholder="Aug 2019- Bill" name="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Bill date<span>*</span></label>
+                      <div class="col-sm-7">          
+                        <input type="text" class="form-control" id="" placeholder="" name="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Due date<span>*</span></label>
+                      <div class="col-sm-7">          
+                        <input type="text" class="form-control" id="" placeholder="" name="">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <label class="control-label col-sm-5" for="">Invoice No</label>
+                      <div class="col-sm-7">          
+                        <input type="text" class="form-control" id="" placeholder="" name="">
+                      </div>
+                    </div>
+                    
+                </div>
+                </div>
+              
+            </div>
+            
+            <div class="addPartiWpr">
+                <div class="addPartiHead">
+                <h5>Add Particulars</h5>
+                    <button type="submit" class="addBtn"><i class="fa fa-plus"></i> Add new row</button>
+                    <div class="clear"></div>
+                </div>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Description
+                          <button type="submit" class="addBtn"><i class="fa fa-plus"></i></button>
+                          </th>
+                        <th>Annual Reccuring Charges</th>
+                        <th>Time Period</th>
+                        <th>Ammount Rs.</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <tr>
+                        <td><select class='fstdropdown-select'>
+                        <option value="">Select Product</option>
+                        <option value="1">First Product</option>
+                        <option value="2">Second Product</option>
+                        <option value="3">Third Product</option>
+                    </select></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Annual Reccuring Charges" name=""></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Time Period" name=""></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Ammount" name=""></td>
+                        <td><button type="submit" class="deleteRowBtn"><i class="fa fa-close"></i> Delete row</button></td>
+                      </tr>
+                        <tr>
+                        <td><select class='fstdropdown-select'>
+                        <option value="">Select Product</option>
+                        <option value="1">First Product</option>
+                        <option value="2">Second Product</option>
+                        <option value="3">Third Product</option>
+                    </select></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Annual Reccuring Charges" name=""></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Time Period" name=""></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Ammount" name=""></td>
+                        <td><button type="submit" class="deleteRowBtn"><i class="fa fa-close"></i> Delete row</button></td>
+                      </tr>
+                      <tr class="trFtr">
+                        <td><input type="text" class="form-control" id="" placeholder="Sub total" name=""></td>
+                        <td></td>
+                        <td></td>
+                          <td><fieldset disabled><input type="text" class="form-control" id="" placeholder="" name=""></fieldset></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
+                
+                <div class="addPartiHead">
+                <h5>Add taxes</h5>
+                    <button type="submit" class="addBtn"><i class="fa fa-plus"></i> Add new row</button>
+                    <div class="clear"></div>
+                </div>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Tax label</th>
+                        <th>Tax in %</th>
+                        <th>Applicable on</th>
+                        <th>Absolute cost</th>
+                        <th>Narrative</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <tr>
+                        <td><select class="form-control">
+                                <option>CGST@9%</option>
+                                <option>SGST@9%</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="form-control" id="" placeholder="9" name=""></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Add applicable on" name=""></td>
+                        <td><fieldset disabled><input type="text" class="form-control" id="" placeholder="" name=""></fieldset></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Add narrative" name=""></td>
+                        <td><button type="submit" class="deleteRowBtn"><i class="fa fa-close"></i> Delete row</button></td>
+                      </tr>
+                        <tr>
+                        <td><select class="form-control">
+                                <option>CGST@9%</option>
+                                <option>SGST@9%</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="form-control" id="" placeholder="9" name=""></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Add applicable on" name=""></td>
+                        <td><fieldset disabled><input type="text" class="form-control" id="" placeholder="" name=""></fieldset></td>
+                        <td><input type="text" class="form-control" id="" placeholder="Add narrative" name=""></td>
+                        <td><button type="submit" class="deleteRowBtn"><i class="fa fa-close"></i> Delete row</button></td>
+                      </tr>
+                      <tr class="trFtr">
+                        <td><input type="text" class="form-control" id="" placeholder="Tax total" name=""></td>
+                        <td></td>
+                        <td></td>
+                          <td><fieldset disabled><input type="text" class="form-control" id="" placeholder="" name=""></fieldset></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
+            
+            </div>
+            <div class="custNotifWpr">
+                <h5>Customise notification</h5>
+                <div class="row">
+                <div class="col-md-3">
+                    <div class="row form-group">
+                      <label class="control-label col-sm-12" for="">Email Subject</label>
+                      <div class="col-sm-12">          
+                        <input type="text" class="form-control" id="" placeholder="Payment request from %COMPANY" name="">
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row form-group">
+                      <label class="control-label col-sm-12" for="">Payment request SMS</label>
+                      <div class="col-sm-12">          
+                        <input type="text" class="form-control" id="" placeholder="You have received a payment request" name="">
+                      </div>
+                    </div>
+                </div>
+                 
+                    <button type="submit" class="greenBtn">Custom Remiders</button>    
+                
+                </div>
+            </div>
+            
+            <div class="finalSumWpr">
+                <h5>Final Summery</h5>
+                <div class="row">
+                <div class="col-md-2">
+                    <div class="row form-group">
+                      <label class="control-label col-sm-12" for="">Fee value with taxes</label>
+                      <div class="col-sm-12">          
+                          <fieldset disabled><input type="text" class="form-control" id="" placeholder="" name=""></fieldset>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row form-group">
+                      <label class="control-label col-sm-12" for="">Grand total</label>
+                      <div class="col-sm-12">          
+                        <fieldset disabled><input type="text" class="form-control" id="" placeholder="" name=""></fieldset>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row form-group">
+                      <label class="control-label col-sm-12" for="">Narrative</label>
+                      <div class="col-sm-12">          
+                        <input type="text" class="form-control" id="" placeholder="Enter narrative" name="">
+                      </div>
+                    </div>
+                </div>
+                    
+                    <div class="col-md-2">
+                        <div class="row form-group">
+                    <label class="control-label col-sm-12" for="">Notify patron</label>    
+                    <div class="onOffBtn col-sm-12">
+                    <input type="checkbox" checked data-toggle="toggle">
+                        </div>   
+                    </div>
+                    </div>
+                    
+                    <div class="form-group btnGroup">   
+                        <button type="submit" class="addBtn" id="btnGet">Save & Send</button>
+                        <div class="loader_modal" style="display: none">
+                        <div class="center">
+                            <img alt="" src="assets/images/loader.gif" />
+                        </div>
+                    </div>
+                        <button type="submit" class="resetBtn">Reset</button>
+                        <div class="clear"></div>
+                    </div>
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+                
+                
+                
+            </form>
+            
+        </div>
+        <!--  formWpr end  -->
+        
+        
+    </section>
+        
+      
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer text-center">
+    
+    <strong>Copyright &copy;</strong> e-Eighteen.com Ltd. All rights reserved.
+  </footer>
+
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3.4.1 -->
+<script src="assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap 4.3.1 -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<!-- select by search js -->
+ <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
+   
+<!-- on off toggle js --> 
+<script src="assets/js/fstdropdown.js"></script>
+
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnGet").click(function () {
+                  $(".loader_modal").show();
+            });
+        });
+    </script>
+    
+<!--
+<script>
+function myFunction() {
+  var x = document.getElementById("sidebar");
+  var y = document.getElementsByClassName("page");
+//    alert(x.style.width);
+  if (x.style.width == "100px") {
+    x.style.width = "250px";
+//    y.style.width = "calc(100% - 250px);";
+       $(".page").css('width','calc(100% - 250px)');
+  } else {
+    x.style.width = "100px";    
+      
+      $(".page").css('width','calc(100% - 120px)');
+  }
+}
+ 
+</script>
+-->
+<script>
+function removeMargin(){
+     $("#main").addClass("miniHdr"); 
+    $(".side-navbar").addClass("miniHdr"); 
+}
+function myFunction() {
+  var x = document.getElementById("sidebar");
+  if (x.class === "side-navbar") {
+//    x.style.display = "block";
+  } else {
+    x.class = "miniSidebar";
+  }
+}
+$(document).ready(function(){
+  $(".toggleBtn").click(function(){
+        if($("#sidebar").hasClass('miniSidebar')){
+            $("#sidebar").removeClass('miniSidebar');
+            $("#main").removeClass('fullPage');
+//            $("#main").class('side-navbar');
+        }else{
+            $("#sidebar").addClass('miniSidebar');
+        $("#main").addClass('fullPage');
+        }
+        
+  });
+});
+</script>
+    
+
+
+
+</body>
+</html>
